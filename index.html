@@ -8,8 +8,12 @@
 </head>
 <body>
     
-    <div id="root">
-        <img v-for="img in immagini" :src="immagini" > 
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 10%; margin-bottom: 10%;" id="root">
+        <button @click="indietro" style="margin-right: 20px; padding: 15px;"><</button>
+
+        <img style="width: 50%;" :src="immagini[index]" > 
+
+        <button @click="avanti" style="margin-left: 20px; padding: 15px;">></button>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
